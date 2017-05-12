@@ -46,7 +46,7 @@ RUN docker-php-source extract \
 	&& if [ -d "/usr/src/php/ext/opcache" ]; then docker-php-ext-install opcache; fi \
 	&& docker-php-source delete
 
-ENV PS_VERSION 1.6.1.12
+ENV PS_VERSION 1.6.1.13
 
 # Get PrestaShop
 ADD https://www.prestashop.com/download/old/prestashop_1.6.1.12.zip /tmp/prestashop.zip
